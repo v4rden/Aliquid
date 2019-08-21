@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aliquid.WebUI", "Aliquid.WebUI\Aliquid.WebUI.csproj", "{CA00C75F-619C-4C98-933E-2E2ADCC310A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aliquid.WebApi", "Aliquid.WebApi\Aliquid.WebApi.csproj", "{CA00C75F-619C-4C98-933E-2E2ADCC310A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aliquid.Application", "Aliquid.Application\Aliquid.Application.csproj", "{B0047CF1-10AE-4027-9439-4A1D56D5CC7D}"
 EndProject
