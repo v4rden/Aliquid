@@ -2,13 +2,21 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
-        <RootNamespace>Aliquid.WebUI</RootNamespace>
+        <RootNamespace>Aliquid.WebApi</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MediatR" Version="7.0.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
         <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
         <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
         <PackageReference Include="NSwag.AspNetCore" Version="13.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Aliquid.Application\Aliquid.Application.csproj" />
     </ItemGroup>
 
 </Project>
