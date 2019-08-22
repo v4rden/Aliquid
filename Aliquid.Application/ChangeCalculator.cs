@@ -1,8 +1,9 @@
 namespace Aliquid.Application
 {
     using System.Collections.Generic;
+    using Interfaces;
 
-    public class ChangeCalculator
+    public class ChangeCalculator : IChangeCalculator
     {
         private readonly int[] _result;
         private readonly decimal[] _values;
