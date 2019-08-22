@@ -16,6 +16,7 @@
         {
             services.AddMediatR(typeof(GetChangeRequestHandler).GetTypeInfo().Assembly);
             services.AddTransient<IChangeCalculator, ChangeCalculator>();
+            services.AddTransient<IDeckAnalyzer, DeckAnalyzer>();
 
             services.AddMvc();
             services.AddSwaggerDocument();

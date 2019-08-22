@@ -4,8 +4,9 @@ namespace Aliquid.Application
     using System.Collections.Generic;
     using System.Linq;
     using Domain;
+    using Interfaces;
 
-    public class DeckAnalyzer
+    public class DeckAnalyzer : IDeckAnalyzer
     {
         private readonly List<Card> _pileOfCards;
 

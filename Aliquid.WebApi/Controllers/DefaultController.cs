@@ -1,5 +1,7 @@
 namespace Aliquid.WebApi.Controllers
 {
+    using System;
+    using System.Collections;
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using Application;
@@ -16,7 +18,9 @@ namespace Aliquid.WebApi.Controllers
         private IMediator _mediator;
 
         private IMediator Mediator => _mediator ?? (_mediator = HttpContext.RequestServices.GetService<IMediator>());
-        
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<int>>> GetChange(decimal money, decimal itemPrice)
         {
             return Ok(await Mediator.Send(new GetChangeRequest
@@ -24,6 +28,13 @@ namespace Aliquid.WebApi.Controllers
                 Money = money,
                 ItemPrice = itemPrice
             }));
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<int>> GetFullDecksAmount([FromQuery] string[] cards)
+        {
+            return Ok(await Mediator.Send(new GetDecksRequest {Pile = cards}));
         }
     }
 }
