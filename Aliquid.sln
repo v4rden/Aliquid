@@ -1,10 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FFCF96B-1E5C-4C74-AD94-D733E706D2CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7C69F67E-5E37-45B8-B705-C9C616443C0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B1D67CA3-3AA3-430C-A3AF-2795EDD15277}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chat", "Chat", "{1FB380D4-8B81-4B4B-A099-2488F5CAB896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat.API", "Chat.API\Chat.API.csproj", "{A2B6D41F-3DD6-4DCD-A753-63411247E605}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2B6D41F-3DD6-4DCD-A753-63411247E605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B6D41F-3DD6-4DCD-A753-63411247E605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B6D41F-3DD6-4DCD-A753-63411247E605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B6D41F-3DD6-4DCD-A753-63411247E605}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1D67CA3-3AA3-430C-A3AF-2795EDD15277} = {4FFCF96B-1E5C-4C74-AD94-D733E706D2CD}
+		{1FB380D4-8B81-4B4B-A099-2488F5CAB896} = {B1D67CA3-3AA3-430C-A3AF-2795EDD15277}
+		{A2B6D41F-3DD6-4DCD-A753-63411247E605} = {1FB380D4-8B81-4B4B-A099-2488F5CAB896}
 	EndGlobalSection
 EndGlobal
